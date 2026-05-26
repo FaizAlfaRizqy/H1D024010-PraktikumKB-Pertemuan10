@@ -10,16 +10,14 @@ from selection import roulette_wheel_selection, tournament_selection
 from crossover import one_point_crossover, two_point_crossover, uniform_crossover
 from mutation import swap_mutation, inversion_mutation, uniform_mutation
 
-# Data Barang Default - Akan diumumkan saat praktikum
+# Data Barang
 # Format: (Nama, Keuntungan, Ukuran)
 DATA_BARANG = [
-    ("Barang 1", 50, 10),
-    ("Barang 2", 40, 5),
-    ("Barang 3", 90, 15),
-    ("Barang 4", 30, 8),
-    ("Barang 5", 60, 12),
-    ("Barang 6", 80, 20),
-    ("Barang 7", 75, 14),
+    ("Barang1", 10, 5),
+    ("Barang2", 40, 4),
+    ("Barang3", 30, 6),
+    ("Barang4", 50, 3),
+    ("Barang5", 35, 7),
 ]
 
 def aturan_berdasarkan_nim(nim):
@@ -220,7 +218,7 @@ entry_nim.insert(0, "H1D023110") # Sesuai contoh pada PDF
 tk.Label(root, text="Kapasitas / Ukuran Maksimal Gudang:").pack(anchor="w")
 entry_kapasitas = tk.Entry(root, width=50)
 entry_kapasitas.pack(pady=5)
-entry_kapasitas.insert(0, "40")
+entry_kapasitas.insert(0, "15")
 
 # Tombol Proses
 tk.Button(root, text="PROSES ALGORITMA GENETIKA", command=jalankan_aplikasi, bg="#007bff", fg="white", font=("Helvetica", 10, "bold")).pack(pady=15)
